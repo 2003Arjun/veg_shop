@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fresh Vegetable Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🥬 Fresh Vegetable Shop 🥕</h1>
+  </header>
+
+  <main class="container">
+    <div class="form-container">
+      <h2>Add / Update Item</h2>
+      <div class="form-group">
+        <label for="name">Vegetable Name:</label>
+        <input type="text" id="name" placeholder="Enter vegetable name" class="form-input" />
+      </div>
+      <div class="form-group">
+        <label for="price">Price (₹):</label>
+        <input type="number" id="price" value="0" min="0" step="0.01" class="form-input" />
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity (kg):</label>
+        <input type="number" id="quantity" value="0" min="0" class="form-input" />
+      </div>
+      <input type="hidden" id="addToShopId" />
+      <button onclick="handleAddOrUpdate()" class="add-btn">Add / Update Item</button>
+    </div>
+
+    <div class="items-container">
+      <h2>Available Items</h2>
+      <div id="shop-items" class="shop-grid"></div>
+    </div>
+
+    <div class="summary-container">
+      <p class="total" id="total">Total Amount: ₹0</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Fresh Vegetable Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
