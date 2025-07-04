@@ -33,11 +33,4 @@ A simple web-based vegetable shop application built using **HTML**, **CSS**, and
 
 ---
 
-## 🌐 Live Demo
-
-> (Optional: Add your GitHub Pages or Netlify link here)
-
----
-
-## 📂 Folder Structure
 
